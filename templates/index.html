@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LinkedIn Analytics</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <div class="content-frame">
+        <div class="main-text">
+            <h1>Welcome to LinkedIn Analytics</h1>
+            <h3>Please login to your LinkedIn to perform the analysis<br>
+                (We do not collect your login data)</h3>
+        </div>
+        <div class="form">
+            <form action="{{ url_for('receiver') }}" method="post">
+                <label for="username">Your Username:</label>
+                <input type="text" name="username" id="username"/> <br>
+                <label for="password">Your password:</label>
+                <input type="password" name="password" id="password"/> <br>
+                <label for="link_username" class="link">Your usernmae exactly how it appears in your profile link
+                    (after
+                    '/in')
+                    :</label>
+                <input type="text" name="link_username" id="link_username"/> <br>
+                <label for="number_of_posts">Number of last posts to analyze:</label>
+                <input type="text" name="number_of_posts" id="number_of_posts"/> <br>
+                <button id="go" type="submit">GET ANALYSIS</button>
+            </form>
+        </div>
+    </div>
+    <div class="createdby">
+        Program created by Stanislav Lukashevich<br>
+        Web integration by Pavel Pshenyshniuk
+    </div>
+</div>
+</body>
+</html>

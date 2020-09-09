@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 1200px;
+  height: 100vh;
+    text-align: center;
+
+    overflow: hidden;
+    white-space: nowrap;
+
+    background-image: url("/static/img/webscraping_linkedin_article_wallpaper 3.png");
+    background-position: center;
+  background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-frame {
+    margin: auto;
+    padding: 30px;
+    width: 800px;
+    background-color: rgba(30, 40, 65, 0.9);
+    border: 2px solid rgb(18, 24, 39);
+}
+
+.main-text {
+    line-height: 3em;
+    color: white;
+}
+
+.main-text h1 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+.main-text h3 {
+    line-height: 1.5em !important;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form label {
+    font-size: 16px;
+    color: white;
+    line-height: 3em;
+    margin-right: 20px;
+}
+
+#go {
+    margin-top: 25px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.1));
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px 35px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#go:hover {
+    background-color: rgb(53, 70, 114);
+    color: #fff;
+}
+
+.form input {
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+}
+
+.createdby {
+    margin-bottom: 50px;
+    color: #b9b9b9;
+}
